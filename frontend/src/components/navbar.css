@@ -1,0 +1,245 @@
+
+  nav {
+    height: 50px;
+    background-color: #01082D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 20px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  nav #logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    padding-left: 10px;
+    flex: 0 0 auto; 
+    display: block;
+  }
+  .logout-button {
+    background: none;
+    border: 2px solid rgb(37, 111, 141);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: rgb(37, 111, 141);
+    color: white;
+}
+
+.logout-button:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgb(37, 111, 141);
+}
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; 
+    width: 100%;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    border-color: white;
+  }
+  
+  #click {
+    display: none;
+  }
+  
+  #click:checked ~ ul {
+    left: 0%;
+  }
+  
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d"; 
+  }
+  
+  .menu-btn i {
+    color: white;
+    display: none;
+    cursor: pointer;
+  }
+  
+
+
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-button {
+    background-color: #30c7c7;
+    color: white;
+    border-width: 1px;
+    border-color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    min-width: 250px;
+    top: 100%;
+    right: 0;
+    color: white;
+    background-color: #01082D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+  }
+  
+  .dropdown-content p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: medium;
+  }
+  
+  .dropdown-content ul {
+    display: inline; /* To keep list inline with the paragraph */
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .dropdown-content li {
+    display: inline-block; /* Keep list items on the same line */
+    margin-right: 10px; /* Add spacing between list items */
+    list-style-type: none; /* Remove bullet points */
+  }
+  
+  .logout-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .logout-button:hover {
+    background-color: darkred;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 1040px) {
+    .menu-btn i {
+      display: block;
+    }
+  
+    #logo {
+      font-size: 20px;
+      padding-left: 10px;
+    }
+  
+    nav ul {
+      position: fixed;
+      left: -120%;
+      top: 52px;
+      right: 0;
+      height: 50vh;
+      width: 100vw;
+      display: block;
+      text-align: center;
+      background: #01082D;
+      transition: all 0.3s ease;
+    }
+  
+    nav ul li {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    nav {
+      padding: 0 10px; 
+    }
+  
+    
+    nav ul li a {
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+  }
+
+  @media (width: 1024px) {
+
+    nav ul {
+      height: 30vh; 
+    }
+  
+  
+    nav ul li a {
+      font-size: 25px;
+      padding: 5px 8px; /* Adjusting padding */
+    }
+  }
+  @media (max-width: 900px) {
+    nav ul {
+      height: 25vh;
+      width: 100vw;
+      
+    }
+
+  }
+  
+  @media (max-width: 768px) {
+
+    nav ul {
+      height: 30vh; 
+    }
+  
+    nav #logo {
+      font-size: 18px; /* Smaller font size for logo on smaller screens */
+    }
+  
+    nav ul li a {
+      font-size: 15px;
+      padding: 5px 8px; /* Adjusting padding */
+    }
+  }
+  @media (max-width: 480px) {
+
+    nav ul {
+      height: 40vh; 
+    }
+  
+
+  }

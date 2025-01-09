@@ -1,0 +1,138 @@
+.fest_cord, .spons, .mpr, .web, .events, .rsp, .hospi, .tv, .cnd, .conveyer, .spons_ad, .mpr_ad, .web_ad, .events_ad, .rsp_ad, .hospi_ad, .tv_ad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 150px;
+}
+
+main.team_main-team{
+    background-color: skyblue;
+    padding: 80px;
+}
+
+.fest_cord div, .spons div, .mpr div, .web div, .events div, .rsp div, .hospi div, .tv div, .cnd div, .conveyer div, .spons_ad div, .mpr_ad div, .web_ad div, .events_ad div, .rsp_ad div, .hospi_ad div, .tv_ad div {
+    background-color: white;
+    padding: 30px;
+    border-radius: 4%;
+    border: 2px solid #008C9E;
+}
+
+.fest_cord div p, .spons div p, .mpr div p, .web div p, .events div p, .rsp div p, .hospi div p, .tv div p, .cnd div p, .conveyer div p, .spons_ad div p, .mpr_ad div p, .web_ad div p, .events_ad div p, .rsp_ad div p, .hospi_ad div p, .tv_ad div p {
+    text-align: center;
+    font-size: medium;
+    font-weight: 1000;
+    padding-top: 20px;
+}
+
+.fest_cord div img, .spons div img, .mpr div img, .web div img, .events div img, .rsp div img, .hospi div img, .tv div img, .cnd div img, .conveyer div img, .spons_ad div img, .mpr_ad div img, .web_ad div img, .events_ad div img, .rsp_ad div img, .hospi_ad div img, .tv_ad div img {
+    height: 200px;
+    width: 200px;
+    border-radius: 5%;
+    border: 2px solid rgb(114, 172, 169);
+}
+
+.h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 60px;
+    padding-top: 30px;
+    font-weight: 5000;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 10px;
+    text-underline-offset: 12px;
+}
+
+.h2 {
+    text-align: center;
+    color: #003366;
+    font-size: 40px;
+    padding: 40px;
+    font-weight: 3000;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 12px;
+}
+
+.h3 {
+    text-align: center;
+    color: #003366;
+    font-size: 30px;
+    padding: 40px;
+    font-weight: 2000;
+}
+
+@media (max-width: 1040px) and (min-width: 799px) {
+    .fest_cord div p, .spons div p, .mpr div p, .web div p, .events div p, .rsp div p, .hospi div p, .tv div p, .cnd div p, .conveyer div p, .spons_ad div p, .mpr_ad div p, .web_ad div p, .events_ad div p, .rsp_ad div p, .hospi_ad div p, .tv_ad div p {
+        font-size: 25px;
+        font-weight: 1000;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .fest_cord, .spons, .mpr, .web, .events, .rsp, .hospi, .tv, .cnd, .conveyer, .spons_ad, .mpr_ad, .web_ad, .events_ad, .rsp_ad, .hospi_ad, .tv_ad {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .fest_cord div img, .spons div img, .mpr div img, .web div img, .events div img, .rsp div img, .hospi div img, .tv div img, .cnd div img, .conveyer div img, .spons_ad div img, .mpr_ad div img, .web_ad div img, .events_ad div img, .rsp_ad div img, .hospi_ad div img, .tv_ad div img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .fest_cord div, .spons div, .mpr div, .web div, .events div, .rsp div, .hospi div, .tv div, .cnd div, .conveyer div, .spons_ad div, .mpr_ad div, .web_ad div, .events_ad div, .rsp_ad div, .hospi_ad div, .tv_ad div {
+        padding: 15px;
+    }
+
+    .h1 {
+        font-size: 40px;
+    }
+
+    .h2 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .h3 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .h1 {
+        font-size: 40px;
+        text-decoration-thickness: 8px;
+        text-underline-offset: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .fest_cord div img, .spons div img, .mpr div img, .web div img, .events div img, .rsp div img, .hospi div img, .tv div img, .cnd div img, .conveyer div img, .spons_ad div img, .mpr_ad div img, .web_ad div img, .events_ad div img, .rsp_ad div img, .hospi_ad div img, .tv_ad div img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .h1 {
+        font-size: 30px;
+    }
+
+    .h2 {
+        font-size: 25px;
+    }
+
+    .h3 {
+        font-size: 18px;
+    }
+
+    .h1 {
+        font-size: 30px;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 5px;
+    }
+}

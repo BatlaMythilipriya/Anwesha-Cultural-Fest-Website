@@ -1,0 +1,80 @@
+/* Main container styling */
+#maindiv-about {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 40px;
+}
+
+/* Main heading styling */
+#mainHeading-about {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(7, 7, 126);
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-decoration: underline; /* Added underline */
+}
+
+/* Paragraph styling */
+.para-about {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  text-align: justify;
+  color: black;
+}
+
+/* Section heading styling */
+#heading-about {
+  font-size: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+/* Sub-heading styling */
+.sub_heading-about {
+  font-size: 24px;
+  color: rgb(7, 7, 126);
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+/* List styling */
+.ul-about {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ul-about li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #mainHeading-about {
+    font-size: 28px;
+  }
+
+  .para-about {
+    font-size: 16px;
+  }
+
+  #heading-about {
+    font-size: 24px;
+  }
+
+  .sub_heading-about {
+    font-size: 20px;
+  }
+
+  .ul-about li {
+    font-size: 16px;
+  }
+}

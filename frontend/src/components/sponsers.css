@@ -1,0 +1,74 @@
+/* Main container styles */
+main.sponsors_main-sponser {
+    background: #0f0f0f;
+    padding: 50px 90px 30px 90px;
+}
+
+/* Heading styles */
+#heading-sponser {
+    color: blue;
+    font-size: 100px;
+    text-align: center;
+    margin: 150px;
+}
+
+/* Row of sponsor images */
+.row1-sponser {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+}
+
+/* Main sponsor styles */
+#sponsor-sponser {
+    text-align: center;
+    padding-bottom: 250px;
+}
+
+/* Common image styles */
+.image-sponser {
+    border-radius: 7%;
+}
+
+/* Responsive design for screens smaller than 1040px */
+@media (max-width: 1040px) {
+    #heading-sponser {
+        font-size: 70px;
+        margin: 100px 0;
+    }
+
+    .row1-sponser {
+        gap: 150px;
+    }
+
+    #sponsor-sponser {
+        padding-bottom: 150px;
+    }
+
+    .image-sponser {
+        width: 60%;
+    }
+}
+
+/* Responsive design for screens smaller than 480px */
+@media (max-width: 480px) {
+    #heading-sponser {
+        font-size: 50px;
+        margin: 50px 0;
+    }
+
+    .row1-sponser {
+        gap: 100px;
+        justify-content: center;
+    }
+
+    #sponsor-sponser {
+        padding-bottom: 100px;
+    }
+
+    .image-sponser {
+        width: 80%;
+    }
+}
